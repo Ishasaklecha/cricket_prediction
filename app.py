@@ -11,6 +11,10 @@ regressor = pickle.load(open(filename, 'rb'))
 app = Flask(__name__)
 
 @app.route('/')
+def crick():
+    return render_template('ishaa.html')
+
+@app.route('/IPL')
 def home():
     title = "First Innings Score Predictor for "
     match_type = "Indian Premier League (IPL)"

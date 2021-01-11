@@ -1,6 +1,20 @@
-
 {% extends 'layout.html' %} {% block body %}
-
+        <style>
+          body {
+            min-height: 100%;
+            background-image: url(../static/background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+        </style>
+        <div class="container">
+    <h2 class='container-heading'><span class='heading_first'>{{ title }}</span><span
+        class="heading_second">{{ match_type }}</span></h2>
+    <div class='description'>
+      <p style="color: white;">A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    </div>
+  </div>
 
         <!-- Prediction Area -->
         <div class="prediction-area">

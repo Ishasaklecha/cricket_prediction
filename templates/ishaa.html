@@ -1,0 +1,61 @@
+{% extends 'layout.html' %} {% block body %}
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={{ url_for('static', filename='back.jpg') }} class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+    <h1 style= "text-color: black;">Cricket Score Prediction</h1>
+    <h2></h2>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src={{ url_for('static', filename='wal1.jpg') }} class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src={{ url_for('static', filename='wal2.jpg') }} class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+<div class="col d-flex justify-content-around">
+<div class="row col-12" style="width: 80%; margin:20px;">
+  <div class="card col-4" style="padding:20px;">
+    <img class="card-img-top" src={{ url_for('static', filename='ipl_post.jpg') }} alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">INDIAN PREMIER LEAGUE</h5>
+      <p class="card-text">First innings score predictors for INDIAN PREMIER LEAGUE (IPL) </p> 
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  </div>
+  <div class="card col-4" style="padding:20px;">
+    <img class="card-img-top" src={{ url_for('static', filename='odi.jpg') }} alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">ONE DAY INTERNATIONAL</h5>
+      <p class="card-text">Match Winner Predictor ONE DAY INTERNATIONAL (ODI)</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card col-4" style="padding:20px;">
+    <img class="card-img-top" src={{ url_for('static', filename='hist.jpg') }} alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">History</h5>
+      <p class="card-text">History of cricket in India</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+{% endblock %}

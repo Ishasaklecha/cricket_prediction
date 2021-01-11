@@ -253,3 +253,15 @@ body{
 .gif1{
 	width: 40%;
 }
+
+
+.history{
+  	background-image: none !important;
+  	text-align: center;
+	margin-top: 50;
+}
+.history h1{
+  	text-align: center;
+	text-color: white;
+}
+
