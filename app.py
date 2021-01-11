@@ -104,6 +104,12 @@ def odi_prediction():
 
     return render_template('odi-result.html', prediction=prediction, title=title, match_type=match_type)
 
+@app.route('/hist')
+def hist():
+    title = "History Of Cricket In India"
+    return render_template('hist.html',title=title)
+
+
 
 
 
